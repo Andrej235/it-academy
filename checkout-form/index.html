@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+  </head>
+
+  <body bgcolor="#181818">
+    <font color="#FFFFFF">
+      <form action="">
+        <fieldset id="shipping-info">
+          <legend>Address</legend>
+
+          <label for="shipping-info">Shipping Info</label>
+          <br />
+
+          <input
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            name="last-name"
+            id="last-name"
+            placeholder="Last Name"
+            required
+          />
+
+          <br />
+          <br />
+
+          <input
+            type="text"
+            name="address"
+            id="address"
+            placeholder="Address"
+            required
+          />
+
+          <br />
+          <br />
+
+          <input
+            type="text"
+            name="apartment"
+            id="apartment"
+            placeholder="Apartment, Suite, etc."
+          />
+
+          <br />
+          <br />
+
+          <select name="country" id="country" required>
+            <option value="">Select Country</option>
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="au">Australia</option>
+          </select>
+
+          <select name="city" id="city" required>
+            <option value="">Select City</option>
+            <option value="nyc">New York</option>
+            <option value="la">Los Angeles</option>
+            <option value="toronto">Toronto</option>
+            <option value="vancouver">Vancouver</option>
+            <option value="london">London</option>
+            <option value="manchester">Manchester</option>
+            <option value="sydney">Sydney</option>
+            <option value="melbourne">Melbourne</option>
+          </select>
+
+          <input
+            type="number"
+            name="zip"
+            id="zip"
+            placeholder="ZIP / Postal Code"
+            required
+          />
+
+          <br />
+          <br />
+
+          <label for="save">Save contact info</label>
+          <input type="checkbox" name="save" id="save" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Payment</legend>
+
+          <fieldset>
+            <button>
+              <img src="assets/paypal.png" alt="paypal" height="64px" />
+            </button>
+
+            <button>Cash</button>
+          </fieldset>
+
+          <fieldset>
+            <input
+              type="text"
+              name="cardholder-name"
+              id="cardholder-name"
+              placeholder="Cardholder Name"
+              required
+            />
+
+            <br />
+            <br />
+
+            <input
+              type="text"
+              name="card-number"
+              id="card-number"
+              placeholder="Card Number"
+              required
+            />
+
+            <br />
+            <br />
+
+            <select name="month" id="month">
+              <option value="">Month</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+              <option value="05">05</option>
+              <option value="06">06</option>
+              <option value="07">07</option>
+              <option value="08">08</option>
+              <option value="09">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+
+            <select name="year" id="year">
+              <option value="">Year</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+              <option value="2030">2030</option>
+            </select>
+
+            <input type="text" name="cvc" id="cvc" placeholder="CVC" required />
+
+            <br />
+            <br />
+
+            <label for="save-card-info">Save card info</label>
+            <input type="checkbox" name="save-card-info" id="save-card-info" />
+          </fieldset>
+
+          <input
+            type="submit"
+            name="submit"
+            id="submit"
+            value="Complete Order"
+          />
+        </fieldset>
+      </form>
+    </font>
+  </body>
+</html>
