@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Store</title>
+    <link rel="stylesheet" href="css-reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="#">
+          <img src="https://picsum.photos/256/256" alt="Fashion Store Logo" />
+        </a>
+
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Shop</a>
+      </nav>
+
+      <div>
+        <input type="text" placeholder="Search for products..." />
+
+        <a href="#">
+          <img src="./imgs/cart.png" alt="Shopping Cart" />
+        </a>
+
+        <a href="#">
+          <img src="./imgs/user.png" alt="User Account" />
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <h1>View All Products</h1>
+
+      <div class="sort-container">
+        <p>Showing 13-24 of 312 products</p>
+
+        <div>
+          <label for="sort">Sort by:</label>
+          <select id="sort" name="sort">
+            <option value="popularity">Popularity</option>
+            <option value="newest">Newest</option>
+            <option value="price-low-high">Price: Low to High</option>
+            <option value="price-high-low">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="main-body">
+        <aside class="filters-container">
+          <h2>Filters</h2>
+
+          <div>
+            <h3>Category</h3>
+            <div>
+              <label for="clothing">Clothing</label>
+              <input type="checkbox" id="clothing" name="clothing" />
+            </div>
+            <div>
+              <label for="shoes">Shoes</label>
+              <input type="checkbox" id="shoes" name="shoes" />
+            </div>
+            <div>
+              <label for="accessories">Accessories</label>
+              <input type="checkbox" id="accessories" name="accessories" />
+            </div>
+          </div>
+
+          <div>
+            <h3>Price Range</h3>
+            <div>
+              <label for="under-50">Under $50</label>
+              <input type="checkbox" id="under-50" name="under-50" />
+            </div>
+            <div>
+              <label for="50-100">$50 - $100</label>
+              <input type="checkbox" id="50-100" name="50-100" />
+            </div>
+            <div>
+              <label for="over-100">Over $100</label>
+              <input type="checkbox" id="over-100" name="over-100" />
+            </div>
+          </div>
+
+          <div>
+            <h3>Brand</h3>
+            <div>
+              <label for="brand-a">Brand A</label>
+              <input type="checkbox" id="brand-a" name="brand-a" />
+            </div>
+            <div>
+              <label for="brand-b">Brand B</label>
+              <input type="checkbox" id="brand-b" name="brand-b" />
+            </div>
+            <div>
+              <label for="brand-c">Brand C</label>
+              <input type="checkbox" id="brand-c" name="brand-c" />
+            </div>
+          </div>
+
+          <button>Apply Filters</button>
+        </aside>
+
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="https://picsum.photos/200" alt="Product 1" />
+
+            <div>
+              <h3>Product 1</h3>
+              <p>$49.99</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="https://picsum.photos/200" alt="Product 2" />
+
+            <div>
+              <h3>Product 2</h3>
+              <p>$79.99</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="https://picsum.photos/200" alt="Product 3" />
+
+            <div>
+              <h3>Product 3</h3>
+              <p>$99.99</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="https://picsum.photos/200" alt="Product 4" />
+
+            <div>
+              <h3>Product 4</h3>
+              <p>$59.99</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="https://picsum.photos/200" alt="Product 5" />
+
+            <div>
+              <h3>Product 5</h3>
+              <p>$89.99</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="https://picsum.photos/200" alt="Product 6" />
+
+            <div>
+              <h3>Product 6</h3>
+              <p>$69.99</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="page-count">
+            <button>Back</button>
+            <button>1</button>
+            <button class="selected">2</button>
+            <button>...</button>
+            <button>9</button>
+            <button>10</button>
+            <button>Next</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
