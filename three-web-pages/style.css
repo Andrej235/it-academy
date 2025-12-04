@@ -249,3 +249,113 @@ main > h1 {
   gap: 0.5rem;
   margin-top: 1rem;
 }
+
+.page-count {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.page-count > button {
+  padding: 0.5rem 1rem;
+  background-color: var(--background);
+  color: var(--foreground);
+  border: 1px solid var(--foreground-muted);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: 150ms;
+}
+
+.page-count > button:hover,
+.page-count > button:focus-visible {
+  background-color: var(--primary);
+  color: var(--muted);
+  border-color: var(--primary);
+}
+
+/* CTA */
+.cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  padding: 6rem 6rem;
+  margin: 2rem 0;
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.cta > h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cta > form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cta > form {
+  width: 100%;
+  padding: 0 4rem;
+}
+
+.cta > form > input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.cta > form > button {
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary);
+  color: var(--background);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 150ms;
+}
+
+.cta > form > button:hover,
+.cta > form > button:focus-visible {
+  color: var(--foreground);
+  background-color: var(--muted);
+}
+
+footer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+  padding: 0 4rem;
+}
+
+footer > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+footer li {
+  color: var(--foreground-muted);
+  margin-bottom: 0.5rem;
+}
+
+footer div:last-child > p {
+  margin: 0 auto;
+  color: var(--foreground-muted);
+  font-size: 0.9rem;
+}
