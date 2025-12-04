@@ -1,0 +1,94 @@
+:root {
+  --muted: #fbf1e9;
+  --background: #f9f9f9;
+  --foreground: #3c3836;
+  --foreground-muted: #7c6f64;
+  --primary: #d75f5f;
+  --secondary: #fabd2f;
+  --accent: #83a598;
+  box-sizing: border-box !important;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 5rem 0;
+}
+
+main > h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+main > form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--foreground-muted);
+}
+
+main > form > label {
+  margin-bottom: 0.5rem;
+}
+
+main > form > input {
+  margin-bottom: 1rem;
+  width: 22.5rem;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid var(--foreground-muted);
+  border-radius: 0.33rem;
+}
+
+main > form > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+main > form > div > div {
+  display: flex;
+  align-items: center;
+}
+
+main > form > div > a {
+  color: var(--foreground-muted);
+  text-decoration: underline;
+}
+
+main > form > button {
+  padding: 0.5rem;
+  background-color: var(--primary);
+  color: var(--muted);
+  font-weight: 700;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: 150ms;
+}
+
+main > form > button:hover,
+main > form > button:focus-visible {
+  background-color: var(--secondary);
+}
+
+main > form > p:last-child {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--foreground-muted);
+}
+
+main > form > p:last-child > a {
+  text-decoration: underline;
+}
+
+main > form > p:last-child > a:hover,
+main > form > p:last-child > a:focus-visible {
+  color: var(--primary);
+}
