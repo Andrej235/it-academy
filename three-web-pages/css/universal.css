@@ -1,0 +1,136 @@
+:root {
+  --muted: #fbf1e9;
+  --background: #f9f9f9;
+  --foreground: #3c3836;
+  --foreground-muted: #7c6f64;
+  --primary: #d75f5f;
+  --secondary: #fabd2f;
+  --accent: #83a598;
+  box-sizing: border-box !important;
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--muted);
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid var(--foreground-muted);
+}
+
+header > nav {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 1rem;
+}
+
+header > nav > a {
+  color: var(--foreground);
+  cursor: pointer;
+}
+
+header > nav > a:first-child {
+  margin-right: 1rem;
+}
+
+header > nav > a:not(:has(img)) {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  transition: 150ms;
+  border-radius: 0.5rem;
+  height: 100%;
+}
+
+header > nav > a:not(:has(img)):hover {
+  background-color: var(--primary);
+  color: var(--muted);
+}
+
+header > nav > a > img {
+  width: 4rem;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+/* right side, search and user acc */
+header > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+header > div > input {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--foreground-muted);
+  border-radius: 0.5rem;
+}
+
+header > div img {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+
+header > div > a:has(img) {
+  object-fit: cover;
+  overflow: hidden;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: 150ms;
+}
+
+header > div > a:has(img):hover {
+  background-color: var(--primary);
+}
+
+footer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+  padding: 0 4rem;
+}
+
+footer > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+footer li {
+  color: var(--foreground-muted);
+  margin-bottom: 0.5rem;
+}
+
+footer div:last-child > p {
+  margin: 0 auto;
+  color: var(--foreground-muted);
+  font-size: 0.9rem;
+}
