@@ -96,6 +96,7 @@ h2 {
   display: flex;
   align-items: center;
   padding: 1rem;
+  transition: 150ms;
 }
 
 .order .order-item:not(:last-child) {
@@ -135,10 +136,15 @@ h2 {
   max-width: 8rem;
 }
 
+.order .order-item:hover {
+  background-color: var(--muted);
+}
+
 .total {
   display: flex;
   justify-content: space-between;
   margin-top: 4rem;
   border-top: 1px solid var(--foreground);
-  padding-top: 1rem;
+  font-weight: 700;
+  padding: 1rem 0.5rem 0.25rem 0.5rem;
 }

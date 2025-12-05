@@ -129,3 +129,14 @@ footer div:last-child > p {
   color: var(--foreground-muted);
   font-size: 0.9rem;
 }
+
+footer a {
+  color: var(--foreground-muted);
+  text-decoration: none;
+  transition: 150ms;
+}
+
+footer a:hover,
+footer a:focus {
+  color: var(--primary);
+}
