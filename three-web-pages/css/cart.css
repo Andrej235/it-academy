@@ -1,0 +1,144 @@
+:root {
+  --muted: #fbf1e9;
+  --background: #f9f9f9;
+  --foreground: #3c3836;
+  --foreground-muted: #7c6f64;
+  --primary: #d75f5f;
+  --secondary: #fabd2f;
+  --accent: #83a598;
+  box-sizing: border-box !important;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-cols-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+main {
+  padding: 2rem min(16rem, 10vw);
+  flex: 1;
+}
+
+main > .grid {
+  gap: min(16rem, 10vw);
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.form-part {
+  margin-bottom: 3rem;
+  border: 1px solid var(--foreground-muted);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.form-part label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-part div:has(label, input) {
+  margin-bottom: 1rem;
+}
+
+.form-part div:has(label, input) > input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--foreground-muted);
+  border-radius: 0.33rem;
+}
+
+.form-part .grid {
+  gap: 1rem;
+}
+
+.form-part button {
+  padding: 0.5rem;
+  width: 100%;
+  font-weight: 700;
+  background-color: var(--primary);
+  color: var(--muted);
+  border: none;
+  border-radius: 0.33rem;
+  cursor: pointer;
+  transition: 150ms;
+}
+
+.form-part button:hover,
+.form-part button:focus {
+  background-color: var(--secondary);
+}
+
+.order {
+  border: 1px solid var(--foreground-muted);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.order .order-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.order .order-item:not(:last-child) {
+  border-bottom: 1px solid var(--foreground-muted);
+}
+
+.order .order-item img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 0.3rem;
+  margin-right: 1rem;
+}
+
+.order .order-item > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.order .order-item > div > div > p {
+  color: var(--foreground-muted);
+}
+
+.order .order-item > div > div > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+.order .order-item input {
+  margin-top: auto;
+  max-width: 8rem;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  border-top: 1px solid var(--foreground);
+  padding-top: 1rem;
+}
