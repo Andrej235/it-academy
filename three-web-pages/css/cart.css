@@ -148,3 +148,81 @@ h2 {
   font-weight: 700;
   padding: 1rem 0.5rem 0.25rem 0.5rem;
 }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  main {
+    padding: 2rem 4rem;
+  }
+
+  main > .grid {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  main {
+    padding: 2rem 2rem;
+  }
+
+  main > .grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  .order .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order .order-item img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .order .order-item input {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0.5rem;
+  }
+
+  .form-part {
+    padding: 0.75rem;
+  }
+
+  .order {
+    padding: 0.75rem;
+  }
+
+  .order .order-item {
+    padding: 0.75rem;
+  }
+}

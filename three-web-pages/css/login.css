@@ -94,3 +94,44 @@ main > form > p:last-child > a:hover,
 main > form > p:last-child > a:focus-visible {
   color: var(--primary);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  main {
+    padding: 3rem 1rem;
+  }
+
+  main > form {
+    padding: 1.5rem;
+  }
+
+  main > form > input {
+    width: 100%;
+    max-width: 22.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 2rem 0.5rem;
+  }
+
+  main > h1 {
+    font-size: 1.3rem;
+  }
+
+  main > form {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  main > form > input {
+    max-width: 100%;
+  }
+
+  main > form > div {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+}
