@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,18 +11,18 @@
 
   <body>
     <header>
-      <nav>
-        <a href="/">
-          <img src="https://picsum.photos/256/256" alt="Fashion Store Logo" />
-        </a>
+      <a href="/" class="brand">
+        <img src="https://picsum.photos/64/64" alt="Fashion Store Logo" />
+      </a>
 
+      <nav>
         <a href="/">Home</a>
         <a href="#">Shop</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
       </nav>
 
-      <div>
+      <div class="actions">
         <input type="text" placeholder="Search for products..." />
 
         <a href="./cart.html">
@@ -256,8 +256,8 @@
     </div>
 
     <footer>
-      <div>
-        <div>
+      <div class="footer1">
+        <section>
           <h3>Shop</h3>
 
           <ul>
@@ -268,9 +268,9 @@
             <li><a href="#">Gift Cards</a></li>
             <li><a href="#">Sales and Offers</a></li>
           </ul>
-        </div>
+        </section>
 
-        <div>
+        <section>
           <h3>Information</h3>
 
           <ul>
@@ -279,20 +279,25 @@
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Delivery and Return</a></li>
           </ul>
-        </div>
+        </section>
 
-        <div>
+        <section>
           <h3>Customer Support</h3>
           <ul>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">Help</a></li>
             <li><a href="#">FAQs</a></li>
           </ul>
-        </div>
+        </section>
       </div>
 
-      <div>
-        <p>&copy; 2024 Fashion Store. All rights reserved.</p>
+      <div class="footer2">
+        <p>Sajt napravio: Andrej Nenadić</p>
+
+        <div class="socials">
+          <a href="#"><img src="./imgs/cart.png" alt="Cart" /></a>
+          <a href="#"><img src="./imgs/user.png" alt="User" /></a>
+        </div>
       </div>
     </footer>
   </body>
