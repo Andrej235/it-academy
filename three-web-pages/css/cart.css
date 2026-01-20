@@ -109,6 +109,7 @@ h2 {
   object-fit: cover;
   border-radius: 0.3rem;
   margin-right: 1rem;
+  max-width: 512px;
 }
 
 .order .order-item > div {
