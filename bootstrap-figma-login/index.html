@@ -2,97 +2,189 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/css-reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <body>
-    <header>
-      <nav>
-        <a href="/">
-          <div class="logo"></div>
-        </a>
+  <body class="d-flex flex-column min-vh-100">
+    <header class="py-1 border-bottom">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-auto">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="/">
+                <div class="logo"></div>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="/">Home</a>
+                  <a class="nav-link" href="#">Shop</a>
+                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" id="sale" href="#">Sale!</a>
+                </div>
+              </div>
+            </nav>
+          </div>
 
-        <a href="/">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#" class="highlight">Sale!</a>
-      </nav>
-
-      <div class="search">
-        <input type="text" placeholder="Search" />
-
-        <a href="#">
-          <img src="./imgs/cart.png" alt="cart" />
-        </a>
-        <a href="#">
-          <img src="./imgs/user.png" alt="profile" />
-        </a>
+          <div class="col">
+            <div class="d-flex gap-4 align-items-center justify-content-end">
+              <input
+                class="form-control"
+                style="max-width: 300px"
+                type="text"
+                placeholder="Search"
+              />
+              <a href="#" class="d-flex align-items-center">
+                <img
+                  src="./imgs/cart.png"
+                  alt="cart"
+                  style="width: 2rem; height: 2rem"
+                />
+              </a>
+              <a href="#" class="d-flex align-items-center">
+                <img
+                  src="./imgs/user.png"
+                  alt="profile"
+                  style="width: 2rem; height: 2rem"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
-    <main>
-      <div>
-        <h1>Login</h1>
+    <main class="flex-grow-1 d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 col-lg-5">
+            <h1 class="text-center mb-4 fw-bold">Login</h1>
 
-        <form action="">
-          <div>
-            <label for="username">Username</label>
-            <input type="text" id="username" />
-          </div>
+            <div class="card">
+              <div class="card-body p-5">
+                <form action="">
+                  <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" />
+                  </div>
 
-          <div>
-            <label for="password">Password</label>
-            <input type="password" id="password" />
-          </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" />
+                  </div>
 
-          <div class="options">
-            <div class="remember-me">
-              <input type="checkbox" id="remember" />
-              <label for="remember">Remember me</label>
+                  <div class="row mb-1 align-items-center">
+                    <div class="col">
+                      <div class="form-check d-flex align-items-center gap-2">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="remember"
+                        />
+                        <label class="form-check-label" for="remember"
+                          >Remember me</label
+                        >
+                      </div>
+                    </div>
+
+                    <div class="col text-end">
+                      <a href="#" class="link-danger underline text-decoration-none small"
+                        >Forgot password?</a
+                      >
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-danger w-100 mb-2">
+                    Login
+                  </button>
+
+                  <p class="text-center small text-muted">
+                    Or
+                    <a href="#" class="link-danger underline text-decoration-none"
+                      >Create an Account</a
+                    >
+                  </p>
+                </form>
+              </div>
             </div>
-
-            <a href="#">Forgot password?</a>
           </div>
-
-          <button type="submit">Login</button>
-
-          <p class="create-acc">Or <a href="#">Create an Account</a></p>
-        </form>
+        </div>
       </div>
     </main>
 
-    <footer>
-      <div class="links">
-        <div>
-          <h3>SHOP</h3>
+    <footer class="bg-light border-top py-5">
+      <div class="container">
+        <div class="row mb-4 text-center">
+          <div class="col-md-4 link-group">
+            <h5 class="fw-bold mb-3">SHOP</h5>
+            <div class="d-flex flex-column gap-2">
+              <a href="#" class="text-decoration-none text-muted small"
+                >Dresses</a
+              >
+              <a href="#" class="text-decoration-none text-muted small"
+                >Jackets</a
+              >
+              <a href="#" class="text-decoration-none text-muted small"
+                >Skirts</a
+              >
+              <a href="#" class="text-decoration-none text-muted small"
+                >Shoes & Bags</a
+              >
+            </div>
+          </div>
 
-          <a href="#">Dresses</a>
-          <a href="#">Jackets</a>
-          <a href="#">Skirts</a>
-          <a href="#">Shoes & Bags</a>
+          <div class="col-md-4 link-group">
+            <h5 class="fw-bold mb-3">INFORMATION</h5>
+            <div class="d-flex flex-column gap-2">
+              <a href="#" class="text-decoration-none text-muted small"
+                >About</a
+              >
+              <a href="#" class="text-decoration-none text-muted small"
+                >Terms & Conditions</a
+              >
+              <a href="#" class="text-decoration-none text-muted small"
+                >Privacy Policy</a
+              >
+              <a href="#" class="text-decoration-none text-muted small"
+                >Delivery and Return</a
+              >
+            </div>
+          </div>
+
+          <div class="col-md-4 link-group">
+            <h5 class="fw-bold mb-3">CUSTOMER SUPPORT</h5>
+            <div class="d-flex flex-column gap-2">
+              <a href="#" class="text-decoration-none text-muted small"
+                >Contact</a
+              >
+              <a href="#" class="text-decoration-none text-muted small">Help</a>
+              <a href="#" class="text-decoration-none text-muted small">FAQ</a>
+            </div>
+          </div>
         </div>
 
-        <div>
-          <h3>INFORMATION</h3>
-
-          <a href="#">About</a>
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Delivery and Return</a>
-        </div>
-
-        <div>
-          <h3>CUSTOMER SUPPORT</h3>
-
-          <a href="#">Contact</a>
-          <a href="#">Help</a>
-          <a href="#">FAQ</a>
+        <div class="border-top pt-3">
+          <p class="text-center text-muted small mb-0">
+            Designed and developed by: Andrej Nenadic
+          </p>
         </div>
       </div>
-
-      <p class="copyright">Designed and developed by: Andrej Nenadic</p>
     </footer>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -10,188 +10,102 @@
 
 body {
   background-color: var(--background);
-  display: flex;
-  flex-direction: column;
-  min-height: 100svh;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-
-  background-color: var(--muted);
-}
-
-nav {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
-
-nav a {
   color: var(--foreground);
-  font-weight: 500;
-  font-size: 1.15rem;
 }
 
-nav a.highlight {
-  color: var(--primary);
-}
-
-nav .logo {
+.logo {
   width: 3rem;
   height: 3rem;
   background-color: var(--primary);
   border-radius: 50%;
+  display: inline-block;
 }
 
-.search {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+header {
+  background-color: var(--muted);
 }
 
-.search input {
-  width: 20rem;
-  height: 2rem;
-  border: 1px solid var(--accent);
-  border-radius: 0.5rem;
-  padding: 0 1rem;
-  font-size: 1rem;
+.navbar-nav .nav-link {
+  color: var(--foreground) !important;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary) !important;
+}
+
+.form-control {
+  border-color: var(--foreground-muted);
   color: var(--foreground);
-  background-color: #d9d9d9;
+  background-color: transparent;
 }
 
-.search img {
-  width: 2rem;
-  height: 2rem;
+.form-control::placeholder {
+  color: var(--foreground-muted);
 }
 
-main {
-  flex: 1;
-  display: grid;
-  place-items: center;
+.form-control:focus {
+  border-color: var(--primary);
+  background-color: white;
+  box-shadow: 0 0 0 0.2rem rgba(215, 95, 95, 0.25);
 }
 
-h1 {
-  color: var(--foreground);
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 3rem;
+.form-label {
+  color: var(--foreground-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  width: 20rem;
+.form-check-label {
+  color: var(--foreground-muted);
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+
+.card {
   border: 1px solid var(--foreground-muted);
   border-radius: 0.25rem;
-  padding: 2rem;
 }
 
-form > div {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-form > div + div {
-  margin-top: 1.5rem;
-}
-
-form label {
-  color: var(--foreground);
-  font-size: 0.9rem;
-}
-
-form input {
-  height: 2rem;
-  border: 1px solid var(--accent);
-  border-radius: 0.25rem;
-  padding: 0 1rem;
-  font-size: 1rem;
-  color: var(--foreground);
-}
-
-form input::placeholder {
-  color: var(--foreground-muted);
-}
-
-form .options {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.85rem;
-  color: var(--foreground-muted);
-}
-
-form .remember-me {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-form button {
-  height: 2.5rem;
-  border: none;
-  border-radius: 0.25rem;
+.btn-danger {
   background-color: var(--primary);
-  color: var(--background);
-  font-size: 1rem;
-  cursor: pointer;
+  border-color: var(--primary);
+  font-weight: 500;
 }
 
-form .create-acc {
-  margin-top: 0.5rem;
-  text-align: center;
-  font-size: 0.9rem;
-  color: var(--foreground-muted);
-}
-
-form a {
-  text-decoration: underline;
-  text-underline-offset: 2px;
+.btn-danger:hover {
+  background-color: #c94646;
+  border-color: #c94646;
 }
 
 footer {
-  border-top: 1px solid var(--foreground-muted);
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 2rem;
-
-  padding: 2rem 8rem;
-}
-
-footer .links {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: center;
-  gap: 4rem;
-  padding: 2rem 0;
-}
-
-footer .links div {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-footer .links h3 {
+  background-color: var(--muted) !important;
   color: var(--foreground);
-  margin-bottom: 1rem;
 }
 
-footer .links a {
-  color: var(--foreground-muted);
-  font-size: 0.9rem;
+footer h5 {
+  color: var(--foreground);
 }
 
-footer .copyright {
+footer a {
   color: var(--foreground-muted);
-  font-size: 0.8rem;
-  text-align: center;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--primary);
+}
+
+.underline {
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+a#sale {
+  color: var(--primary) !important;
 }
