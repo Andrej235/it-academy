@@ -3,21 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop</title>
+    <title>Contact | Fashion Store</title>
     <link rel="stylesheet" href="css/css-reset.css" />
     <link rel="stylesheet" href="css/universal.css" />
+    <link rel="stylesheet" href="css/contact.css" />
   </head>
+
   <body>
     <header>
-      <a href="/" class="brand">
+      <a href="./index.html" class="brand">
         <img src="https://picsum.photos/64/64" alt="Fashion Store Logo" />
       </a>
 
       <nav>
-        <a href="/">Home</a>
-        <a href="/shop.html">Shop</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
+        <a href="./index.html">Home</a>
+        <a href="./cart.html">Cart</a>
+        <a href="./login.html">Login</a>
+        <a href="./contact.html">Contact</a>
       </nav>
 
       <div class="actions">
@@ -33,7 +35,85 @@
       </div>
     </header>
 
-    <main></main>
+    <main class="contact">
+      <section class="contact-hero">
+        <div>
+          <h1>Contact Us</h1>
+          <p>
+            Have a question about your order or our products? Send us a message
+            and our team will respond within 24 hours.
+          </p>
+        </div>
+        <div class="contact-hero-card">
+          <p><strong>Support Hours</strong></p>
+          <p>Mon–Fri: 09:00–18:00</p>
+          <p>Sat: 10:00–14:00</p>
+        </div>
+      </section>
+
+      <section class="contact-grid">
+        <form class="contact-form">
+          <div class="form-row">
+            <label for="contact-name">Full Name</label>
+            <input id="contact-name" type="text" placeholder="Your name" />
+          </div>
+
+          <div class="form-row">
+            <label for="contact-email">Email</label>
+            <input
+              id="contact-email"
+              type="email"
+              placeholder="your@email.com"
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="contact-subject">Subject</label>
+            <input
+              id="contact-subject"
+              type="text"
+              placeholder="Order status, product question..."
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="contact-message">Message</label>
+            <textarea
+              id="contact-message"
+              rows="6"
+              placeholder="Write your message here..."
+            ></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <aside class="contact-info">
+          <h2>Contact Information</h2>
+          <p>We'd love to hear from you. Use any of the options below.</p>
+
+          <div class="info-card">
+            <p class="info-title">Visit Us</p>
+            <p>Vuka Karadžića 12, Belgrade</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-title">Call Us</p>
+            <p>+381 11 123 456</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-title">Email</p>
+            <p>support@fashionstore.com</p>
+          </div>
+
+          <div class="info-card">
+            <p class="info-title">Order Assistance</p>
+            <p>Include your order number for faster resolution.</p>
+          </div>
+        </aside>
+      </section>
+    </main>
 
     <footer>
       <div class="footer1">
@@ -54,7 +134,7 @@
           <h3>Information</h3>
 
           <ul>
-            <li><a href="/">About</a></li>
+            <li><a href="./index.html">About</a></li>
             <li><a href="#">Terms and Conditions</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Delivery and Return</a></li>
@@ -72,13 +152,15 @@
       </div>
 
       <div class="footer2">
-        <p>Sajt napravio: Andrej Nenadić</p>
+        <p>Website created by: Andrej Nenadić</p>
 
         <div class="socials">
-          <a href="/cart.html"><img src="./imgs/cart.png" alt="Cart" /></a>
-          <a href="/login.html"><img src="./imgs/user.png" alt="User" /></a>
+          <a href="./cart.html"><img src="./imgs/cart.png" alt="Cart" /></a>
+          <a href="./login.html"><img src="./imgs/user.png" alt="User" /></a>
         </div>
       </div>
     </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

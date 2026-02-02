@@ -1,0 +1,162 @@
+.contact {
+  padding: 2.5rem 5vw 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.contact-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: var(--muted);
+  border: 1px solid var(--foreground-muted);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.contact-hero h1 {
+  font-size: clamp(2rem, 2.5vw, 2.8rem);
+  margin-bottom: 0.75rem;
+}
+
+.contact-hero p {
+  color: var(--foreground-muted);
+  max-width: 40rem;
+  line-height: 1.6;
+}
+
+.contact-hero-card {
+  background: var(--background);
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--foreground-muted);
+  min-width: 220px;
+  text-align: left;
+}
+
+.contact-hero-card p {
+  color: var(--foreground);
+  margin-bottom: 0.35rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+}
+
+.contact-form {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid var(--foreground-muted);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-row label {
+  font-weight: 600;
+}
+
+.form-row input,
+.form-row textarea {
+  padding: 0.75rem 1rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--foreground-muted);
+  font-size: 1rem;
+  font-family: inherit;
+  background: var(--background);
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  outline: 2px solid rgba(215, 95, 95, 0.3);
+  border-color: var(--primary);
+}
+
+.contact-form button {
+  align-self: flex-start;
+  background: var(--primary);
+  color: var(--muted);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 150ms;
+}
+
+.contact-form button:hover {
+  filter: brightness(0.95);
+  transform: translateY(-1px);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-info h2 {
+  font-size: 1.5rem;
+}
+
+.contact-info p {
+  color: var(--foreground-muted);
+  line-height: 1.6;
+}
+
+.info-card {
+  background: #fff;
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--foreground-muted);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.info-title {
+  font-weight: 600;
+  color: var(--foreground);
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 900px) {
+  .contact-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 2rem 1.5rem 3rem;
+  }
+
+  .contact-hero {
+    padding: 1.5rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+}
