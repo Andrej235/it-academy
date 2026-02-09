@@ -81,6 +81,36 @@ h2 {
   border-radius: 0.5rem;
 }
 
+.order .promo-form {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.order .promo-form input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--foreground-muted);
+  border-radius: 0.33rem;
+}
+
+.order .promo-form button {
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  background-color: var(--primary);
+  color: var(--muted);
+  border: none;
+  border-radius: 0.33rem;
+  cursor: pointer;
+  transition: 150ms;
+}
+
+.order .promo-form button:hover,
+.order .promo-form button:focus {
+  background-color: var(--secondary);
+}
+
 .order .order-item {
   display: flex;
   align-items: center;
@@ -196,6 +226,10 @@ h2 {
 
   .order .order-item input {
     max-width: 100%;
+  }
+
+  .order .promo-form {
+    flex-direction: column;
   }
 }
 
