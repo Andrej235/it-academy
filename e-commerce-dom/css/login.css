@@ -68,19 +68,19 @@ main > form > button:focus-visible {
   background-color: var(--secondary);
 }
 
-main > form > p:last-child {
+main > form > p#register-link {
   text-align: center;
   margin-top: 0.5rem;
   font-size: 0.85rem;
   color: var(--foreground-muted);
 }
 
-main > form > p:last-child > a {
+main > form > p#register-link > a {
   text-decoration: underline;
 }
 
-main > form > p:last-child > a:hover,
-main > form > p:last-child > a:focus-visible {
+main > form > p#register-link > a:hover,
+main > form > p#register-link > a:focus-visible {
   color: var(--primary);
 }
 
@@ -123,4 +123,19 @@ main > form > p:last-child > a:focus-visible {
     gap: 0.5rem;
     align-items: flex-start;
   }
+}
+
+#login-status {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: medium;
+}
+
+#login-status.success {
+  color: green;
+}
+
+#login-status.error {
+  color: orangered;
 }
