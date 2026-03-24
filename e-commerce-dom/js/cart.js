@@ -1,4 +1,7 @@
-let count = 0;
+let count = +localStorage.getItem("cartCount");
+count ||= 0;
+
+const cartCountElement = document.getElementById("cart-count");
 
 export function incrementCount() {
   count++;
@@ -6,11 +9,11 @@ export function incrementCount() {
 }
 
 export function updateCartCount() {
-  const cartCountElement = document.getElementById("cart-count"); // we can't cache this element ebcause this needs to work across all pages
   if (!cartCountElement) {
     console.error("Cart count element not found on this page.");
     return;
   }
 
   cartCountElement.textContent = count;
+  localStorage.setItem("cartCount", count);
 }

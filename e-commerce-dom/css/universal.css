@@ -209,3 +209,25 @@ footer a:focus {
 body > main {
   flex: 1;
 }
+
+#cart-link {
+  position: relative;
+  overflow: visible;
+}
+
+#cart-count-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(30%, -30%);
+  background-color: var(--primary);
+  color: var(--muted);
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+
+  display: grid;
+  place-items: center;
+}
