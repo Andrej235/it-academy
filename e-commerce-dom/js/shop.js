@@ -11,8 +11,9 @@ products.forEach((product) => {
 });
 
 function createProductCard(product) {
-  const div = document.createElement("div");
-  div.className = "product-card";
+  const parent = document.createElement("a");
+  parent.className = "product-card";
+  parent.href = `./product.html?id=${product.id}`;
 
   const img = document.createElement("img");
   img.src = product.imageUrl;
@@ -34,10 +35,10 @@ function createProductCard(product) {
   innerDiv.appendChild(p);
   innerDiv.appendChild(button);
 
-  div.appendChild(img);
-  div.appendChild(innerDiv);
+  parent.appendChild(img);
+  parent.appendChild(innerDiv);
 
-  return div;
+  return parent;
 }
 
 function handleAddToCart(event) {
